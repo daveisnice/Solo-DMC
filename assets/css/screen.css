@@ -1,5 +1,7 @@
 @import "@tryghost/shared-theme-assets/assets/css/v1/screen.css";
 @import "fonts.css";
+/* DAVE CHANGE, POINT TO CUSTOM CSS */
+@import "dave.css";
 
 :root {
     --font-sans: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
