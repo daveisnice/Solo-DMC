@@ -1,9 +1,10 @@
 /* IMPORTING FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @font-face {
     font-family: 'Shadower';
-    src: url("../fonts/Shadower.ttf") format('truetype'); /* Safari, Android, iOS */
-             font-style: normal;
+    src: url(https://daveisnice.pikapod.net/content/files/2024/06/Shadower.woff2) format("woff2"); 
+    font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
 }
@@ -28,7 +29,24 @@ h4, h5, h6, p, .gh-card-length, .gh-card-date, .gh-author-name, .gh-article-date
     font-weight: 500;
   }
 
-  /* WORKING, KINDA?
+/* WORKING, KINDA?
+@font-face {
+    font-family: 'Shadower';
+    src: url("../fonts/Shadower.ttf") format('truetype'); /* Safari, Android, iOS 
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Shadower';
+    src: url(https://daveisnice.pikapod.net/content/files/2024/06/Shadower.woff2) format("woff2"); 
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+
   @font-face {
     font-family: "Shadower";
     font-style: bold;
