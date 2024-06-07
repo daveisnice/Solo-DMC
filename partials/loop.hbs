@@ -27,16 +27,12 @@
                 {{/if}}
             {{/match}}
             <footer class="gh-card-meta">
+                <!-- Changed Format of date -->
                 <time class="gh-card-date">{{date published_at format="MMMM YYYY"}}</time>
                 {{#if tags}}
-                    <span class="gh-card-length"><p>{{tags from="3" to="4" autolink="false"}}</p></span>
+                    <!-- Changed read time to tags -->
+                    <span class="gh-card-length"><p>{{tags from="2" to="3" autolink="false"}}</p></span>
                 {{/if}}
-                <!--Removed Reading time, added tags. Changed date format.
-                <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-                {{#if reading_time}}
-                    <span class="gh-card-length">{{reading_time}}</span>
-                {{/if}}
-                -->
                 {{#unless access}}
                 {{^has visibility="public"}}
                     <span class="gh-card-access">

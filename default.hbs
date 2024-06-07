@@ -96,9 +96,10 @@
                 {{navigation type="secondary"}}
             </nav>
 
-            <div class="gh-copyright">
+            <!-- Updated footer -->
+            <div class="gh-copyright" style="text-align: center;">
                 {{#unless @custom.footer_text}}
-                    {{@site.title}} © {{date format="YYYY"}}. Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                    {{@site.title}} © {{date format="YYYY"}} <br><a href="https://www.daveisnice.com/patch-notes/">Portfolio v6 Kratos</a> • Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
                 {{else}}
                     {{@custom.footer_text}}
                 {{/unless}}
