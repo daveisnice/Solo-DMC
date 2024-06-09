@@ -45,28 +45,30 @@
 </section>
 
 <main class="gh-main gh-outer">
+    <!-- First Two Projects -->
     {{#get "posts" include="tags" filter="tag:film-and-video" from="0" to="2"}}
         {{#foreach posts from="0" to="2"}}
             {{> "loop"}}
         {{/foreach}}
     {{/get}}
 
+    <!-- Latest Blog Posts -->
     <div class="gh-inner">
-        <h2 class="gh-article-title" style="margin-top:80px;"><a href="/blog">Latest Blog Posts:</a></h1>
+        <h2 class="gh-article-title" style="margin-top:80px; text-decoration:underline;">Latest Blog Posts:</h1>
         {{#get "posts" limit="3" filter="tag:blog" include="tags"}}
             {{#foreach posts}}
                {{> "type-loop"}}
             {{/foreach}}
         {{/get}}
+        <span style="margin-bottom:80px;" class="gh-btn gh-primary-btn"><a href="/blog/">View All Posts</a></span>
     </div>
-
+    
+    <!-- Rest of Projects -->
     {{#get "posts" include="tags" filter="tag:film-and-video"}}
         {{#foreach posts from="3" columns="2"}}
             {{> "loop"}}
         {{/foreach}}
     {{/get}}
-
-    
 </main>
 
 
