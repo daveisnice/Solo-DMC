@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{@site.locale}}">
+<script>
+    // Function to get current URL
+    function getCurrentURL () {
+     return window.location.href
+    }
+    // Slice URL string into two variables
+    const url_whole = getCurrentURL()
+    const url_first = url_whole.slice(8, 30)
+    const url_rest = url_whole.slice(30)
+    // Redirect Logic
+    if (url_first == "daveisnice.pikapod.net"){
+        location.href = 'https://daveisnice.com'+url_rest;
+    }
+</script>
+
 
 <head>
     <meta charset="utf-8">
