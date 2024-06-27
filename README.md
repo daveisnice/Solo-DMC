@@ -1,8 +1,9 @@
 # Solo
 
-Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This is not Solo, which I would reccomend using, this is a custom variant made for my personal  website [www.daveisnice.com](https://www.daveisnice.com). Feel free to take a look at you want, but man, you're just going to find jank in these mines not gold.
+Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This is not Solo, which I would reccomend using, this is a custom variant made for my personal  website [daveisnice.com](https://www.daveisnice.com). Feel free to take a look at you want, but man, you're just going to find jank in these mines not gold.
 
 **Demo: https://solo.ghost.io**
+**Demo But Worse: https://daveisnice.com**
 
 # Instructions
 
