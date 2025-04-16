@@ -31,7 +31,8 @@ body {
 }
 
 .gh-main {
-    padding-top: clamp(4.8rem, 4rem + 2.5vw, 8rem);
+    /* padding-top: clamp(4.8rem, 4rem + 2.5vw, 8rem); */
+    padding-top: 64px;
 }
 
 figcaption {
@@ -146,7 +147,7 @@ hr {
 /* ---------------------------------------------------------- */
 
 .gh-about {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .gh-about-content {
@@ -316,7 +317,7 @@ hr {
     gap: 48px;
     justify-content: flex-end;
     width: 100%;
-    padding-bottom: clamp(2.4rem, 2rem + 1.25vw, 4rem);
+    /* padding-bottom: clamp(2.4rem, 2rem + 1.25vw, 4rem); */
 }
 
 .has-typographic-about .gh-about-image {
