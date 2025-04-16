@@ -19,9 +19,13 @@ h1, h2, h3{
     font-weight: bold;
   }
 
-h4, h5, h6, p, .gh-card-length, .gh-card-date, .gh-author-name, .gh-article-date, .wp-element-caption, .gh-article-tag {
+h4, h5, h6, p, li, em, blockquote, .gh-card-length, .gh-card-date, .gh-author-name, .gh-article-date, .wp-element-caption, .gh-article-tag {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+}
+
+.gh-navigation-link {
+    font-family: 'Inter', sans-serif;
 }
 
 .nav{
