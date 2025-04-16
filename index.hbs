@@ -53,16 +53,17 @@
             {{> "loop"}}
         {{/foreach}}
     </div>
-    <!-- First Two Projects -->
-    <div>
-            <h2 class="gh-article-title" style="margin-top:80px; text-decoration:underline;">Latest Blog Posts:</h2>
-            {{#get "posts" limit="3" filter="tag:blog" include="tags"}}
-                {{#foreach posts}}
-                    {{> "type-loop"}}
-                {{/foreach}}
-            {{/get}}
-            <span class="gh-btn gh-primary-btn"><a href="/blog/">View All Posts</a></span>
-        </div>
+    
+    <!-- Blog Posts -->
+    <div class ="gh-inner">
+        <h2 class="gh-article-title" style="margin-top:80px; text-decoration:underline;">Latest Blog Posts:</h2>
+        {{#get "posts" limit="3" filter="tag:blog" include="tags"}}
+            {{#foreach posts}}
+                {{> "type-loop"}}
+            {{/foreach}}
+        {{/get}}
+        <span class="gh-btn gh-primary-btn"><a href="/blog/">View All Posts</a></span>
+    </div>
 </main>
 
 {{#contentFor "body_class"}}{{#match @custom.header_section_layout "Side by side"}} has-side-about{{/match}}{{#match @custom.header_section_layout "Large background"}}{{#if @site.cover_image}} is-head-transparent has-background-about{{else}} has-side-about{{/if}}{{/match}}{{#match @custom.header_section_layout "Typographic profile"}}{{#if @site.icon}} has-typographic-about{{else}} has-side-about{{/if}}{{/match}}{{/contentFor}}
