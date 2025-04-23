@@ -2,7 +2,7 @@
 
 Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This theme is not Solo, which I would reccomend using, but an extremely janky off-shoot worked on by some dickhead with a film and media studies degree. I'm sorry.
 
-**Demo: https://solo.ghost.io**
+**Demo: https://daveisnice.com**
 
 # Instructions
 
