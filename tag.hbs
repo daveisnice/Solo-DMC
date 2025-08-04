@@ -1,4 +1,10 @@
 {{!< default}}
+<style>
+  /* Initially hide all page-specific divs */
+  .dmc-page-spec {
+    display: none;
+  }
+</style>
 
 <main class="gh-main gh-outer">
     {{#tag}}
@@ -16,5 +22,30 @@
         {{#foreach posts}}
             {{> "loop"}}
         {{/foreach}}
+    </div>
+
+    <!-- Link to Archives -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentPage = window.location.pathname;
+
+        if (currentPage === '/' || currentPage === '/film-and-video/') {
+            document.getElementById('FM-ARCHIVE').style.display = 'block';
+        } else if (currentPage === '/mixed-media/') {
+            document.getElementById('MM-ARCHIVE').style.display = 'block';
+        }
+        });
+    </script>
+
+    <div class ="gh-inner dmc-page-spec" id="FM-ARCHIVE" style="margin-top:80px;">
+        <h2 class="gh-article-title">Looking for More?</h2>
+        <p class="gh-article-excerpt" style="margin-top: 5px;">Check out the full Film and Video archive below:</p>
+        <span class="gh-btn gh-primary-btn" style="margin-top: 20px;"><a href="/film-and-video-archive/">Enter the Archive</a></span>
+    </div>
+
+    <div class ="gh-inner dmc-page-spec" id="MM-ARCHIVE" style="margin-top:80px;">
+        <h2 class="gh-article-title">Looking for More?</h2>
+        <p class="gh-article-excerpt" style="margin-top: 5px;">Check out the full Mixed Media archive below:</p>
+        <span class="gh-btn gh-primary-btn" style="margin-top: 20px;"><a href="/mixed-media-archive/">Enter the Archive</a></span>
     </div>
 </main>
