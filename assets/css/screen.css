@@ -597,8 +597,8 @@ hr {
     margin: 0 !important;
 }
 
+/* Removed sticky property */
 .gh-article-meta-inner {
-    position: sticky;
     top: 48px;
     display: flex;
     flex-direction: column;

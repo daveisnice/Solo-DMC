@@ -32,12 +32,14 @@
                             {{/primary_author}}
                             <time class="gh-author-name" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></div>
                             <!-- Removed primary tags, added tag 1 and 2 -->
-                            {{#if tags.[1]}}
-                                <a class="gh-article-tag" href="{{tags.[1].url}}" style="--tag-color: {{tags.[1].accent_color}}">{{tags.[1].name}}</a>
-                            {{/if}}
-                            {{#if tags.[2]}}
-                                <a class="gh-article-tag" href="{{tags.[2].url}}" style="--tag-color: {{tags.[1].accent_color}}">{{tags.[2].name}}</a>
-                            {{/if}}
+                            <div class="post-article-tags">
+                                {{#if tags.[1]}}
+                                    <a class="gh-article-tag" href="{{tags.[1].url}}" style="--tag-color: {{tags.[1].accent_color}}">{{tags.[1].name}}</a>
+                                {{/if}}
+                                {{#if tags.[2]}}
+                                    <a class="gh-article-tag" href="{{tags.[2].url}}" style="--tag-color: {{tags.[1].accent_color}}">{{tags.[2].name}}</a>
+                                {{/if}}
+                            </div>
                         </div>
                     </aside>
                 </section>
@@ -50,6 +52,8 @@
                 {{/if}}
 
                 <footer class="gh-article-footer gh-canvas">
+                    <!-- HIDDEN NAVIGATION BUTTONS -->
+                    <!--
                     <nav class="gh-navigation">
                         <div class="gh-navigation-previous">
                             {{#prev_post}}
@@ -64,6 +68,7 @@
                                 <a class="gh-navigation-link" href="{{url}}">Next →</a>
                             {{/next_post}}
                         </div>
+                    -->
                     </nav>
                 </footer>
             </article>
