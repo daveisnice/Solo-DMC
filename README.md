@@ -1,6 +1,6 @@
 # Solo
 
-Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This theme is not Solo, which I would reccomend using, but an extremely janky off-shoot worked on by some dickhead with a film and media studies degree. I'm sorry.
+Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused on showcasing the work of an individual writer or creator. This theme is not Solo, which I would recommend using, but an extremely janky off-shoot worked on by some dickhead with a film and media studies degree. I'm sorry.
 
 **Live Demo: https://daveisnice.com**
 
@@ -12,14 +12,14 @@ Solo is a minimal theme for [Ghost](https://github.com/TryGhost/Ghost) focused o
 
 # Development
 
-Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
+Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [pnpm](https://pnpm.io/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
 # Install
-yarn
+pnpm install
 
 # Run build & watch for changes
-yarn dev
+pnpm dev
 ```
 
 Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
@@ -27,13 +27,13 @@ Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/
 The `zip` Gulp task packages the theme files into `dist/solo.zip`, which you can then upload to your site.
 
 ```bash
-yarn zip
+pnpm zip
 ```
 
-# Contribution
+### Theme translations
 
-This repo is synced automatically with [TryGhost/Themes](https://github.com/TryGhost/Themes) monorepo. If you're looking to contribute or raise an issue, head over to the main repository [TryGhost/Themes](https://github.com/TryGhost/Themes) where our official themes are developed.
+Please see the @Tryghost/Themes/theme-translations/README.md for how to edit or contribute translations.
 
-## Copyright & License
+# Copyright & License
 
-Copyright (c) 2013-2025 Ghost Foundation - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2026 Ghost Foundation - Released under the [MIT license](LICENSE).
