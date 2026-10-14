@@ -62,7 +62,7 @@
                         {{#if @site.logo}}
                             <img src="{{@site.logo}}" alt="{{@site.title}}">
                         {{else}}
-                            {{@site.title}}
+                            DMC
                         {{/if}}
                     </a>
                 </div>
@@ -126,7 +126,7 @@
             <!-- Updated footer -->
             <div class="gh-copyright" style="text-align: center;">
                 {{#unless @custom.footer_text}}
-                    {{@site.title}} © {{date format="YYYY"}} <br><a href="https://daveisnice.com/patch-notes/">Portfolio v6 Akivili</a> • Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+                    {{@site.title}} © {{date format="YYYY"}} <br><a href="/patch-notes/">Portfolio v6 Akivili</a> • Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
                 {{else}}
                     {{@custom.footer_text}}
                 {{/unless}}

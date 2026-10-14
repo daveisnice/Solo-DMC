@@ -54,7 +54,14 @@
         {{/foreach}}
     </div>
     
-    <!-- Blog Posts -->
+    <div class ="gh-inner dmc-page-spec" style="margin-top:80px;">
+        <h2 class="gh-article-title">Want to See More?</h2>
+        <p class="gh-article-excerpt" style="margin-top: 5px;">This was but a taste! Feel free to explore my other projects:</p>
+        <span class="gh-btn gh-primary-btn" style="margin-top: 20px; margin-right: 10px;"><a href="/film-and-video/">View Film & Video Projects</a></span>
+        <span class="gh-btn gh-primary-btn" style="margin-top: 20px;"><a href="/mixed-media/">View Mixed Media Projects</a></span>
+    </div>
+
+    <!-- Blog Posts
     <div class ="gh-inner">
         <h2 class="gh-article-title" style="margin-top:80px; text-decoration:underline;">Latest Blog Posts:</h2>
         {{#get "posts" limit="3" filter="tag:blog" include="tags"}}
@@ -64,6 +71,7 @@
         {{/get}}
         <span class="gh-btn gh-primary-btn"><a href="/blog/">View All Posts</a></span>
     </div>
+    -->
 </main>
 
 {{#contentFor "body_class"}}{{#match @custom.header_section_layout "Side by side"}} has-side-about{{/match}}{{#match @custom.header_section_layout "Large background"}}{{#if @site.cover_image}} is-head-transparent has-background-about{{else}} has-side-about{{/if}}{{/match}}{{#match @custom.header_section_layout "Typographic profile"}}{{#if @site.icon}} has-typographic-about{{else}} has-side-about{{/if}}{{/match}}{{/contentFor}}
