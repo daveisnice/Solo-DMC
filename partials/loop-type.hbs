@@ -2,7 +2,11 @@
         <article style="padding: 64px 0px;" class="gh-card-wrapper">
             <a href="{{url}}">
                     <h3 class="gh-card-title">{{title}}</h3>
-                    <p style="font-weight:700; padding-bottom:10px; padding-top:5px;">{{tags from="2" to="3" autolink="false"}}</p>
+                    <div class="type-loop-data">
+                        <p style="font-weight:700;">{{tags from="3" to="6" autolink="false"}}</p>
+                        <p class="gh-card-date">{{date published_at format="MMMM YYYY"}}</p>
+                    </div>
+                  
                     <p style="max-width: 900px" class="gh-card-excerpt">{{excerpt}}</p>
             </a>
         </article>
